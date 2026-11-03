@@ -22,14 +22,14 @@ with the policy passage shown. The agent checks it and sends.
 ## How it works
 
 ```
-question ──> guardrail ──> word mapping ──> search 24 policy passages ──> best score ≥ 2.5 ? ──> Claude answers from the top 3 passages, citing [S1]
+question ──> guardrail ──> word mapping ──> search 18 policy passages ──> best score ≥ 2.5 ? ──> Claude answers from the top 3 passages, citing [S1]
                 │                                                              │
                 └── tries to change the rules ──> escalate              no ──> escalate to a person
 ```
 
 1. **Guardrail:** requests like "ignore your instructions" are escalated before anything else.
 2. **Word mapping:** customer words are mapped to policy words (couch → sofa, money back → refund).
-3. **Search (retrieval):** the 8 policies are split into 24 short passages, each scored with BM25,
+3. **Search (retrieval):** the 8 policies are split into 18 short passages, each scored with BM25,
    a keyword search formula where rare words count more than common ones. The best 3 are kept.
 4. **Escalation threshold:** if the best passage scores below 2.5, no policy really answers, so a person takes over.
 5. **Answer (generation):** Claude writes the answer from those 3 passages only, cites each claim,
