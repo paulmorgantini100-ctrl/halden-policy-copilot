@@ -12,6 +12,8 @@ from copilot.agent import respond
 def show(question, use_claude):
     result = respond(question, use_claude=use_claude)
     print(f"\n[{result['mode']}] {result['answer']}\n")
+    if result.get("mapped"):
+        print("Words mapped: " + ", ".join(result["mapped"]))
     print("Sources considered:")
     for i, p in enumerate(result["passages"], 1):
         print(f"  S{i}  {p['score']:5.2f}  {p['title']}: {p['text'][:90]}...")
