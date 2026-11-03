@@ -71,7 +71,7 @@ The 20/20 is not proof: V2 was tuned on those questions. **The unseen score is t
 
 ### Recommendation
 
-Not ready for customers. Ready for an **agent-facing pilot**, where an agent reviews every answer before sending it.
+Not ready for customers. Ready for an **agent-facing pilot**: agents are trained on when to trust an answer and when to escalate, and they review every answer before sending it.
 Next step: add meaning-based search (embeddings) alongside keywords, then re-test on a fresh unseen set.
 Go-live for customers only at 90%+ on unseen questions with no wrong answers.
 
