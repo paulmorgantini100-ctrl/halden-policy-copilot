@@ -1,0 +1,283 @@
+{
+  "set": "unseen_set.csv",
+  "versions": {
+    "V1": {
+      "questions": 10,
+      "accuracy": 0.7,
+      "correct": 7,
+      "safe_escalations": 1,
+      "wrong_answers": 2,
+      "retrieval_success": 0.625,
+      "escalation_rate": 0.3,
+      "offtopic_caught": 1.0
+    },
+    "V2": {
+      "questions": 10,
+      "accuracy": 0.7,
+      "correct": 7,
+      "safe_escalations": 1,
+      "wrong_answers": 2,
+      "retrieval_success": 0.625,
+      "escalation_rate": 0.3,
+      "offtopic_caught": 1.0
+    },
+    "V3": {
+      "questions": 10,
+      "accuracy": 1.0,
+      "correct": 10,
+      "safe_escalations": 0,
+      "wrong_answers": 0,
+      "retrieval_success": 1.0,
+      "escalation_rate": 0.2,
+      "offtopic_caught": 1.0
+    }
+  },
+  "details": {
+    "V1": [
+      {
+        "question": "My mattress is too firm, can I send it back?",
+        "expected": "returns",
+        "got": "escalate",
+        "score": 2.02,
+        "rewrite": null,
+        "outcome": "safe escalation"
+      },
+      {
+        "question": "How much is white glove?",
+        "expected": "delivery",
+        "got": "delivery",
+        "score": 4.21,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Lamp shade came cracked in the box",
+        "expected": "damaged",
+        "got": "shipping",
+        "score": 4.03,
+        "rewrite": null,
+        "outcome": "wrong answer"
+      },
+      {
+        "question": "Does the warranty cover my dog chewing the armrest?",
+        "expected": "warranty",
+        "got": "warranty",
+        "score": 4.44,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Will you match a Crate & Barrel sale price?",
+        "expected": "pricematch",
+        "got": "pricematch",
+        "score": 9.86,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "How do I become Circle Plus?",
+        "expected": "loyalty",
+        "got": "loyalty",
+        "score": 4.44,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Can I send a gift to my sister in London?",
+        "expected": "shipping",
+        "got": "giftcards",
+        "score": 3.37,
+        "rewrite": null,
+        "outcome": "wrong answer"
+      },
+      {
+        "question": "Can I get cash for my gift card?",
+        "expected": "giftcards",
+        "got": "giftcards",
+        "score": 9.11,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Where is my package right now?",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "I want to speak to a manager about my bad experience",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": null,
+        "outcome": "correct"
+      }
+    ],
+    "V2": [
+      {
+        "question": "My mattress is too firm, can I send it back?",
+        "expected": "returns",
+        "got": "escalate",
+        "score": 2.02,
+        "rewrite": null,
+        "outcome": "safe escalation"
+      },
+      {
+        "question": "How much is white glove?",
+        "expected": "delivery",
+        "got": "delivery",
+        "score": 4.21,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Lamp shade came cracked in the box",
+        "expected": "damaged",
+        "got": "shipping",
+        "score": 4.03,
+        "rewrite": null,
+        "outcome": "wrong answer"
+      },
+      {
+        "question": "Does the warranty cover my dog chewing the armrest?",
+        "expected": "warranty",
+        "got": "warranty",
+        "score": 4.44,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Will you match a Crate & Barrel sale price?",
+        "expected": "pricematch",
+        "got": "pricematch",
+        "score": 9.86,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "How do I become Circle Plus?",
+        "expected": "loyalty",
+        "got": "loyalty",
+        "score": 4.44,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Can I send a gift to my sister in London?",
+        "expected": "shipping",
+        "got": "giftcards",
+        "score": 3.37,
+        "rewrite": null,
+        "outcome": "wrong answer"
+      },
+      {
+        "question": "Can I get cash for my gift card?",
+        "expected": "giftcards",
+        "got": "giftcards",
+        "score": 9.11,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "Where is my package right now?",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": null,
+        "outcome": "correct"
+      },
+      {
+        "question": "I want to speak to a manager about my bad experience",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": null,
+        "outcome": "correct"
+      }
+    ],
+    "V3": [
+      {
+        "question": "My mattress is too firm, can I send it back?",
+        "expected": "returns",
+        "got": "returns",
+        "score": 4.12,
+        "rewrite": "return window mattress comfort exchange",
+        "outcome": "correct"
+      },
+      {
+        "question": "How much is white glove?",
+        "expected": "delivery",
+        "got": "delivery",
+        "score": 5.75,
+        "rewrite": "white glove delivery fee",
+        "outcome": "correct"
+      },
+      {
+        "question": "Lamp shade came cracked in the box",
+        "expected": "damaged",
+        "got": "damaged",
+        "score": 7.76,
+        "rewrite": "item arrived damaged",
+        "outcome": "correct"
+      },
+      {
+        "question": "Does the warranty cover my dog chewing the armrest?",
+        "expected": "warranty",
+        "got": "warranty",
+        "score": 8.48,
+        "rewrite": "warranty exclusions pet damage upholstery",
+        "outcome": "correct"
+      },
+      {
+        "question": "Will you match a Crate & Barrel sale price?",
+        "expected": "pricematch",
+        "got": "pricematch",
+        "score": 9.86,
+        "rewrite": "price match competitor sale price",
+        "outcome": "correct"
+      },
+      {
+        "question": "How do I become Circle Plus?",
+        "expected": "loyalty",
+        "got": "loyalty",
+        "score": 5.59,
+        "rewrite": "Halden Circle Plus tier eligibility",
+        "outcome": "correct"
+      },
+      {
+        "question": "Can I send a gift to my sister in London?",
+        "expected": "shipping",
+        "got": "shipping",
+        "score": 6.97,
+        "rewrite": "ship international United Kingdom",
+        "outcome": "correct"
+      },
+      {
+        "question": "Can I get cash for my gift card?",
+        "expected": "giftcards",
+        "got": "giftcards",
+        "score": 9.11,
+        "rewrite": "gift card cash redemption",
+        "outcome": "correct"
+      },
+      {
+        "question": "Where is my package right now?",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": "OFFTOPIC",
+        "outcome": "correct"
+      },
+      {
+        "question": "I want to speak to a manager about my bad experience",
+        "expected": "escalate",
+        "got": "escalate",
+        "score": 0.0,
+        "rewrite": "OFFTOPIC",
+        "outcome": "correct"
+      }
+    ]
+  }
+}
